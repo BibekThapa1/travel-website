@@ -1,8 +1,14 @@
-/*  Navbar  */
+/*  Font Import  */
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
+/*  Navbar  */
 nav {
     transition: 0.4s all ease-in;
-    overflow: hidden;
+}
+.logo-section{
+    transition: 0.3s all linear;
+
 }
 
 .logo-section .logo {
@@ -10,7 +16,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+padding-top: 0 !important;
+padding-bottom: 0 !important;
 }
 
 .logo-section .logo img {
@@ -21,10 +28,34 @@ nav {
     height: 100%;
     transform: scale(1.3);
 }
+/* Navbar */
+.navbar{
+    transition: 0.3s all linear;
+}
+
+.navbar .container-fluid{
+    background-color: rgb(209, 224, 224);
+    transition: 0.3s all linear;
+}
+.cross-bar{
+    font-weight: 900;
+    font-size: 2rem;
+}
+.nav-text{
+    font-size: 1.1rem;
+    font-family: "Playwrite DE Grund", cursive;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+.nav-text .icon{
+    font-size: 1.5rem;
+    color:rgb(255, 33, 33)
+}
+
 
 /* Nav Links */
-
-.nav-links-ul{
+.nav-links{
     transition: 0.3s all linear;
     height: 0;
 }
@@ -33,15 +64,85 @@ nav .nav-links ul li {
     transition: 0.3s all linear;
 }
 
-nav .show-nav,nav .show-nav ul{
-    height: fit-content;
+.nav-links.show-nav{
+    height: auto;
+    transition:3s all linear;
+}
+.nav-links-ul{
+    transition: 0.3s all linear;
 }
 
+.navbar li{
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: 0.3s all ease-in-out;
+}
+.navbar .navbar-collapse ul li{
+   letter-spacing: 1.2px;
+}
+.navbar li:hover{
+    color: rgb(97, 74, 74);
+}
+.navbar li a:hover{
+    color:rgb(0, 0, 0);
+    
+}
+.navbar .nav-links-ul {
+    width: 100vw;
+    cursor: pointer;
+    margin-bottom: 0;
+    background-color: rgb(211, 212, 221);
+}
+
+.navbar .nav-links-ul li{
+    border-top: 1px solid black;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.navbar .nav-links-ul li:last-child{
+    border-bottom: 1px solid black;
+}
+
+/*     SearchBar      */
+.search-div{
+    position: relative !important;
+    z-index: 20 !important;
+}
+
+.search-div .search-result{
+    position:absolute;
+    background-color: white;
+    z-index:30 !important;
+    min-width: 205px;
+    border-end-end-radius: 7px;
+    border-end-start-radius: 7px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 3px;
+    display: block;
+}
+.search-div .search-result p{
+    border-radius: 10px;
+    margin: 5px 5px;
+    padding: 5px 0 5px 10px;
+    background-color: rgb(249, 249, 249);
+    transition: 0.3s all linear;
+    cursor:pointer
+}
+.search-div .search-result p:hover{
+    background-color: rgb(200, 204, 204);
+}
+.search-div .search-result p:first-child{
+    margin-top: 10px;;
+}
 
 /* Slider  */
 .sliderStyles {
-    height: 80vmin;
+    height: 60vmin;
     overflow: hidden;
+    /* position: relative; */
+    /* z-index: 0; */
 }
 
 .arrow {
@@ -65,22 +166,24 @@ nav .show-nav,nav .show-nav ul{
 }
 
 .slider-container {
+    z-index:10;
     transition: 0.5s all ease-in;
 }
 
 .slider-container .slideStyles {
     transition: 0.5s all ease-in;
+    z-index: 0;
 }
 
-.slider-container .index-point{
-position: absolute;
+/* .slider-container .index-point{
+
 display: flex;
 justify-content: center;
 align-items: center;
 bottom:20px;
  transform: translate(0, -50%);;
 color:white;
-}
+} */
 
 /* Locations section */
 .card{
@@ -105,4 +208,38 @@ color:white;
     display: flex;
    justify-content: center;
    align-items: center;
+}
+.card-container .card{
+    width: 20rem !important;
+}
+
+@media screen {
+    
+}
+
+/*   Footer Section  */ 
+.footer{
+    font-weight: 600; 
+    font-size: 1.2rem;
+    /* background-image: url(./images/footerImg.webp); */
+    min-height: 40vh ;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("./images/footerImg.webp");
+    color:white;
+    bottom: 0;
+
+}
+
+.footer-icon-gmail{
+    color:rgb(68, 211, 211);
+    font-weight: 900;
+}
+
+/* Media queries */
+@media screen and (min-width:600px) {
+    .logo-section .logo{
+        padding:0 2rem !important;
+    }
+    .logo-section .logo .nav-text{
+        font-size: 1.3rem;
+    }
 }

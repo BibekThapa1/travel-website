@@ -40,12 +40,7 @@ const Slider = ({ images }) => {
         />
         <div className="slideStyles" style={slideStyles}></div>
         <RiArrowDropRightLine className="arrow right-arrow" onClick={setNext} />
-        <ul className="index-point">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
+        
       </div>
     </div>
   );

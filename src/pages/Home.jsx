@@ -8,6 +8,7 @@ import cardImg2 from "../images/iilam2.jpeg";
 const Home = () => {
   const images = [img1, img2];
 
+
   const cards = [
     {
       img: cardImg1,
@@ -23,31 +24,31 @@ const Home = () => {
     },
     {
       img: cardImg1,
-      name: "Iilam1 View",
+      name: "Iilam3 View",
       description:
         "This is Iilam. It is located in eastern hilly region of nepal. The nature here is very special and give a heartwarming vibe.",
     },
     {
       img: cardImg1,
-      name: "Iilam1 View",
+      name: "Iilam4 View",
       description:
         "This is Iilam. It is located in eastern hilly region of nepal. The nature here is very special and give a heartwarming vibe.",
     },
     {
       img: cardImg1,
-      name: "Iilam1 View",
+      name: "Iilam5 View",
       description:
         "This is Iilam. It is located in eastern hilly region of nepal. The nature here is very special and give a heartwarming vibe.",
     },
     {
       img: cardImg1,
-      name: "Iilam1 View",
+      name: "Iilam6 View",
       description:
         "This is Iilam. It is located in eastern hilly region of nepal. The nature here is very special and give a heartwarming vibe.",
     },
     {
       img: cardImg1,
-      name: "Iilam1 View",
+      name: "Iilam7 View",
       description:
         "This is Iilam. It is located in eastern hilly region of nepal. The nature here is very special and give a heartwarming vibe.",
     },
@@ -56,14 +57,15 @@ const Home = () => {
   return (
     <>
       <Slider images={images} />
-      <div className="container pt-3 text-center">
+      <div className=" pt-3 text-center">
         <h1>Explore the Featured Destinations</h1>
-        <div className="card-container container">
+        <div className="card-container container-fluid">
           <div className="row">
             {cards.map((card) => (
               <div
                 className="card col-xs-12 col-md-3 col-xl-4 m-sm-2 m-xl-3 my-2"
                 style={{ width: "18rem" }}
+                key={card.name}
               >
                 <img src={card.img} className="card-img-top mt-1" alt="..." />
                 <div className="card-body">
@@ -84,6 +86,18 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <div className=" info-section mt-5">
+        <h1 className="text-center">Welcome to Purbi Nepal</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Perspiciatis, repellat! Magni repudiandae fuga consectetur sunt ex
+          asperiores, aliquam numquam atque. Lorem ipsum dolor sit, amet
+          consectetur adipisicing elit. Aut dolorum in iste et. Esse repudiandae
+          repellendus distinctio at reprehenderit non, soluta ea sapiente
+          incidunt cumque totam rem praesentium ratione ad.
+        </p>
+      </div>
+ 
     </>
   );
 };
