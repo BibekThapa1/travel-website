@@ -1,6 +1,7 @@
 /*  Font Import  */
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /*  Navbar  */
 nav {
@@ -175,19 +176,34 @@ nav .nav-links ul li {
     z-index: 0;
 }
 
-/* .slider-container .index-point{
+/*   Welcome section   */
+.info-section h1{
+    font-size: 1.5rem;
+    color: black;
+    font-weight: bold;
+    font-family: monospace;
+    letter-spacing: 0.3px;
+}
 
-display: flex;
-justify-content: center;
-align-items: center;
-bottom:20px;
- transform: translate(0, -50%);;
-color:white;
-} */
+.info-section p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
 
-/* Locations section */
+/* Destinations  section */
+
+.destination-section h1{
+    font-size: 1.5rem;
+    color: black;
+    font-weight: bold;
+    font-family: monospace;
+    letter-spacing: 0.3px;
+}
+
 .card{
     transition: 0.2s all linear;
+    background-color:ghostwhite !important;
+    border:1px solid rgb(164, 155, 155) !important;
 }
 
 .card:hover{
@@ -204,18 +220,33 @@ color:white;
     transform: scale(1.01);
     cursor: pointer;
 }
+
+.card .card-body .card-title{
+    font-size: 1.2rem;
+    letter-spacing: 1.2px;
+}
+.card button{
+    background-color: #E7E6F7;
+    border-radius: 10px;
+    font-size: 1.01rem;
+    padding:5px 3rem;
+    transition: 0.3s all linear;
+    font-weight: 450;
+    align-self: center;
+}
+.card button:hover{
+    background-color: #F4F4F6;
+    color:rgb(49, 169, 65);
+}
 .card-container .row{
     display: flex;
    justify-content: center;
    align-items: center;
 }
 .card-container .card{
-    width: 20rem !important;
+    min-width: 20rem ;
 }
-
-@media screen {
-    
-}
+   
 
 /*   Footer Section  */ 
 .footer{
@@ -241,5 +272,30 @@ color:white;
     }
     .logo-section .logo .nav-text{
         font-size: 1.3rem;
+    }
+    .info-section h1{
+        font-size: 1.7rem;
+    }
+    .destination-section h1{
+        font-size:1.7rem;
+    }
+    .card-container .card{
+       min-width: auto;
+    }
+      
+}
+
+@media screen and (min-width:1200px) {
+    .logo-section .logo{
+        padding:0 2rem !important;
+    }
+    .logo-section .logo .nav-text{
+        font-size: 1.3rem;
+    }
+    .info-section h1{
+        font-size: 2rem;
+    }
+    .destination-section h1{
+        font-size: 2rem;
     }
 }
