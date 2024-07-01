@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { RiArrowDropLeftLine } from "react-icons/ri";
 import { RiArrowDropRightLine } from "react-icons/ri";
+import { FaChevronDown } from "react-icons/fa";
 import "../App.css";
 
 const Slider = ({ images }) => {
@@ -31,6 +32,13 @@ const Slider = ({ images }) => {
       : setCurrentIndex(currentIndex + 1);
   }
 
+setTimeout(() => {
+  console.log("Function entered")
+  setCurrentIndex(currentIndex + 1)
+  currentIndex == images.length - 1
+      ? setCurrentIndex(0)
+      : setCurrentIndex(currentIndex + 1);
+}, 4000);
   return (
     <div className="slider-container">
       <div className="sliderStyles" style={sliderStyles}>
@@ -40,7 +48,11 @@ const Slider = ({ images }) => {
         />
         <div className="slideStyles" style={slideStyles}></div>
         <RiArrowDropRightLine className="arrow right-arrow" onClick={setNext} />
-        
+        <div className="slider-text">
+         <h3>Purbi Nepal</h3> 
+         <span><FaChevronDown />
+         </span>
+        </div>
       </div>
     </div>
   );

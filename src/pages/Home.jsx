@@ -68,7 +68,7 @@ const Home = () => {
           incidunt cumque totam rem praesentium ratione ad.
         </p>
       </div>
-      <div className="destination-section pt-3 text-center">
+      <div className="destination-section pt-3 text-center mb-3">
         <h1>Explore the Featured Destinations</h1>
         <div className="card-container container-fluid">
           <div className="row">
@@ -87,6 +87,11 @@ const Home = () => {
               </div>
             ))}
           </div>
+        </div>
+        <div className="buttons">
+          <button className="">
+            Explore More...
+          </button>
         </div>
       </div>
       
