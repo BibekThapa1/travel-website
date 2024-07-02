@@ -6,6 +6,7 @@ import "../App.css";
 
 const Slider = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  let resetTime = 4000;
 
   const slideStyles = {
     height: "100%",
@@ -24,21 +25,23 @@ const Slider = ({ images }) => {
     currentIndex == 0
       ? setCurrentIndex(images.length - 1)
       : setCurrentIndex(currentIndex - 1);
+      clearTimeout(sliderTimeout)
   }
 
   function setNext() {
     currentIndex == images.length - 1
       ? setCurrentIndex(0)
       : setCurrentIndex(currentIndex + 1);
+      clearTimeout(sliderTimeout)
   }
 
-setTimeout(() => {
+let sliderTimeout = setTimeout(() => {
   console.log("Function entered")
   setCurrentIndex(currentIndex + 1)
   currentIndex == images.length - 1
       ? setCurrentIndex(0)
       : setCurrentIndex(currentIndex + 1);
-}, 4000);
+}, resetTime);
   return (
     <div className="slider-container">
       <div className="sliderStyles" style={sliderStyles}>

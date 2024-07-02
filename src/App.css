@@ -6,7 +6,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:wght@700&family=Playwrite+DE+Grund:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 /*  Navbar  */
+
+/* .navbar-section.fixed {
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index:20;
+    background-color: white;
+} */
+nav.navbar.fixed{
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index:20;
+    background-color: white;
+}
+
 nav {
+
     transition: 0.4s all ease-in;
 }
 
@@ -39,8 +56,9 @@ nav {
 }
 
 .navbar .container-fluid {
-    background-color: rgb(209, 224, 224);
+    background-color: #419D78;
     transition: 0.3s all linear;
+
 }
 
 .cross-bar {
@@ -63,7 +81,7 @@ nav {
 
 
 /* Nav Links */
-.nav-links {
+.nav-links-ul {
     transition: 0.3s all linear;
     height: 0;
 }
@@ -71,8 +89,12 @@ nav {
 nav .nav-links ul li {
     transition: 0.3s all linear;
 }
+.navbar-collapse li a{
+color: white;
+transition: 0.4s all linear;
+}
 
-.nav-links.show-nav {
+.nav-links.show-nav .nav-links-ul {
     height: auto;
     transition: 3s all linear;
 }
@@ -80,7 +102,10 @@ nav .nav-links ul li {
 .nav-links-ul {
     transition: 0.3s all linear;
 }
-
+.btn-outline-success{
+    color: white !important;
+    border:1px solid white !important;
+}
 .navbar li {
     font-size: 1.2rem;
     font-weight: 600;
@@ -308,6 +333,49 @@ nav .nav-links ul li {
     background-color: green;
     color: white;
     border-color: white;
+}
+
+/* Subscribe Section */
+.subscribe-section{
+    background-color: #335C81;
+    color:white;
+    font-family: "Playwrite DE Grund";
+}
+.subscribe-section div.email-section form{
+
+}
+.subscribe-section div.email-section div{
+    margin:5px 0;
+}
+
+.subscribe-section div.email-section div .icon{
+   color:#FFEED6;
+   font-size: 1.2rem;
+}
+.subscribe-section div.email-section div input{
+    padding: 6px 9px;
+    width: 85%;
+    max-width: 600px;
+    margin:5px 15px;
+    border:none;
+}
+
+.email-section div input:focus{
+    outline:none;
+}
+
+.subscribe-section button{
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-left: 2.1rem;
+    align-self: center;
+    transition: 0.3s all linear;
+    margin-top: 10px;
+    width: 10rem;
+}
+.subscribe-section button:hover{
+    background-color: #53bf92;
+    color:white;
 }
 
 /*   Footer Section  */

@@ -4,6 +4,7 @@ import img1 from "../images/slider1.jpg";
 import img2 from "../images/slider2.jpg";
 import cardImg1 from "../images/iilam.jpeg";
 import cardImg2 from "../images/iilam2.jpeg";
+import Eletter from "../components/Eletter";
 
 const Home = () => {
   const images = [img1, img2];
@@ -94,7 +95,7 @@ const Home = () => {
           </button>
         </div>
       </div>
-      
+      <Eletter />
  
     </>
   );
