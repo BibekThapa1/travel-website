@@ -8,38 +8,11 @@ import "../App.css"
 import cardImg1 from "../images/iilam.jpeg";
 import cardImg2 from "../images/iilam2.jpeg";
 import Carousel from './Carousel';
-
+import { placesCardData } from '../data/data';
 
 const PlaceInfo = () => {
 
     const {slug} = useParams(); 
-    const cards = [
-        {
-          img: cardImg1,
-          name: "Iilam View",
-          description:
-            "This is Iilam. It is located in eastern hilly region of nepal. The nature here is very special and give a heartwarming vibe.",
-        },
-        {
-          img: cardImg2,
-          name: "Iilam2 View",
-          description:
-            "This is Iilam. It is located in eastern hilly region of nepal. The nature here is very special and give a heartwarming vibe.",
-        },
-        {
-          img: cardImg1,
-          name: "Iilam3 View",
-          description:
-            "This is Iilam. It is located in eastern hilly region of nepal. The nature here is very special and give a heartwarming vibe.",
-        },
-        {
-          img: cardImg1,
-          name: "Iilam4 View",
-          description:
-            "This is Iilam. It is located in eastern hilly region of nepal. The nature here is very special and give a heartwarming vibe.",
-        },
-    ]
-
 
     const placeData = placeDescription.filter((place)=>place.name === slug)
     
@@ -47,7 +20,7 @@ const PlaceInfo = () => {
     <div className='place-info'>
      <div className="container-fluid heading px-md-4 px-lg-5">
       <h1 className='heading text-center'>Betana Wetland</h1>
-      <Carousel data={cards} />
+      <Carousel data={placesCardData} />
       <p className='text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et illum repudiandae hic vel reprehenderit pariatur, exercitationem expedita placeat ducimus molestiae voluptatum nisi neque libero cupiditate culpa iusto a odio eius ipsum quos, ipsam nulla recusandae sed. Eius ipsum fuga molestias itaque reprehenderit quisquam quas consequuntur vero magnam tempore eaque in ipsa nostrum illum laboriosam voluptatem, odio repellendus mollitia. Ducimus, quia.</p>
      </div> 
   
@@ -62,7 +35,7 @@ const PlaceInfo = () => {
         <h2>Explore More</h2>
         <div className="card-container container-fluid">
           <div className="row">
-            {cards.map((card) => (
+            {placesCardData.map((card) => (
               <div
                 className="card col-xs-12 col-md-3 col-xl-4 m-sm-2 m-xl-3 my-2"
                 style={{ width: "18rem" }}
