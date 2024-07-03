@@ -20,7 +20,11 @@ nav.navbar.fixed{
     left: 0;
     z-index:20;
     background-color: white;
+<<<<<<< HEAD
     width:100%;
+=======
+    width: 100%;
+>>>>>>> 7f5d685 (Some configuration made)
 }
 
 nav {
@@ -34,7 +38,7 @@ nav {
 }
 
 .logo-section .logo {
-    height: 80px;
+    height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
