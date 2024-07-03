@@ -1,0 +1,48 @@
+/* CSS Imports */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*********************
+  Place Info Css
+*********************/
+
+/* map */
+
+.place-info h1,.place-info h2{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;;
+}
+
+.place-info h1{
+    font-size: 2rem;
+    padding: 10px 10px 0;
+}
+
+.place-info h2{
+    font-size: 1.7rem;
+}
+
+.map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.map iframe{
+    width: 100%;
+    height: 45vh;
+    padding: 10px 5px;
+    max-width: 900px;
+    max-height: 400px;
+}
+
+
+@media screen and (min-width:700px) {
+    .map iframe{
+        height: 50vh;
+    }
+}
+
+
+
