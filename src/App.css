@@ -484,7 +484,9 @@ transition: 0.4s all linear;
     .logo-section .logo .nav-text {
         font-size: 1.3rem;
     }
-
+ .sliderStyles {
+    height: 70vmin;
+}
     .slider-container .slider-text{
         display:flex;
     }
