@@ -299,6 +299,11 @@ transition: 0.4s all linear;
     letter-spacing: 1.2px;
 }
 
+.card .card-body p
+{
+    min-height: 50px;
+}
+
 .card button {
     background-color: #E7E6F7;
     border-radius: 10px;
@@ -344,9 +349,7 @@ transition: 0.4s all linear;
     color:white;
     font-family: "Playwrite DE Grund";
 }
-.subscribe-section div.email-section form{
 
-}
 .subscribe-section div.email-section div{
     margin:5px 0;
 }
