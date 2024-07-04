@@ -7,24 +7,14 @@
 
 /*  Navbar  */
 
-/* .navbar-section.fixed {
-    position: fixed;
-    top:0;
-    left: 0;
-    z-index:20;
-    background-color: white;
-} */
+
 nav.navbar.fixed{
     position: fixed;
     top:0;
     left: 0;
     z-index:20;
     background-color: white;
-<<<<<<< HEAD
-    width:100%;
-=======
     width: 100%;
->>>>>>> 7f5d685 (Some configuration made)
 }
 
 nav {
@@ -145,6 +135,12 @@ transition: 0.4s all linear;
     letter-spacing: 1.2px;
     font-family: "Nunito Sans", sans-serif;
 }
+
+.navbar .nav-links-ul li .link-tag{
+    text-decoration: none;
+    color: inherit;
+}
+
 
 .navbar .nav-links-ul li:last-child {
     border-bottom: 1px solid black;

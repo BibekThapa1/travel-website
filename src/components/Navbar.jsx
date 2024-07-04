@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import logo from "../images/logo.png";
 import "../App.css";
 import { RxCross2 } from "react-icons/rx";
@@ -6,12 +7,18 @@ import { CgMail } from "react-icons/cg";
 import { FaSearch } from "react-icons/fa";
 import SearchBar from "./SearchBar";
 
-const navbar = () => {
+const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
   const [navAbs, setNavAbs] = useState(false);
   const [navHeight, setNavHeight] = useState(0);
 
   const navRef = useRef(null);
+
+  const navUlLinks = document.querySelectorAll(".link-tag")
+  navUlLinks.forEach(link => {
+    link.addEventListener("click",toggleNav)
+  });
+
 
   useEffect(() => {
     if (navRef.current) {
@@ -75,24 +82,17 @@ const navbar = () => {
           >
             <ul className="navbar-nav me-auto mb-lg-0 ">
               <li className="nav-item px-sm-1 px-md-1 px-lg-3">
-                <a className="nav-link " aria-current="page" href="/">
-                  Home
-                </a>
+                <Link to="/" className="nav-link">Home</Link>
+                
               </li>
               <li className="nav-item px-sm-1 px-md-1 px-lg-3">
-                <a className="nav-link" href="/">
-                  Places
-                </a>
+              <Link to="/places" className="nav-link">Places</Link>
               </li>
               <li className="nav-item px-sm-1 px-lg-3">
-                <a className="nav-link" href="/">
-                  About
-                </a>
+              <Link to="/about" className="nav-link">About</Link>
               </li>
               <li className="nav-item px-sm-1 px-lg-3">
-                <a className="nav-link" href="/">
-                  Contact
-                </a>
+                <a className="nav-link" href="#footer">Contact</a>
               </li>
             </ul>
             <SearchBar className={""} />
@@ -104,10 +104,11 @@ const navbar = () => {
           }`}
         >
           <ul className="nav-links-ul list-unstyled">
-            <li className="p-2 py-2   px-3">Home</li>
-            <li className="p-2 py-2 px-3">Places</li>
-            <li className="p-2 py-2 px-3">About</li>
-            <li className="p-2 py-2 px-3">Contact</li>
+          
+            <li className="p-2 py-2   px-3">  <Link className="link-tag" to={"/"}>Home</Link></li>
+            <li className="p-2 py-2 px-3"><Link className="link-tag" to={"/places"}>Places</Link></li>
+            <li className="p-2 py-2 px-3"><Link className="link-tag" to={"/about"}>About</Link></li>
+            <li className="p-2 py-2 px-3"><a className="link-tag" href="#footer">Contact</a></li>
           </ul>
         </div>
       </nav>
@@ -115,4 +116,4 @@ const navbar = () => {
   );
 };
 
-export default navbar;
+export default Navbar;
