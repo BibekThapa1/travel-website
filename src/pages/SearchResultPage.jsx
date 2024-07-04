@@ -1,4 +1,4 @@
-import React from 'react'
+  import React from 'react'
 import SearchResults from '../components/SearchResults'
 
 const SearchResultPage = () => {

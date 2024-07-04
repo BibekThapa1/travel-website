@@ -6,6 +6,8 @@ import { RxCross2 } from "react-icons/rx";
 import { CgMail } from "react-icons/cg";
 import { FaSearch } from "react-icons/fa";
 import SearchBar from "./SearchBar";
+import { IoIosInformationCircleOutline } from "react-icons/io";
+
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
@@ -50,6 +52,8 @@ const Navbar = () => {
           <p className="px-2 nav-text">
             <CgMail className="icon footer-icon-gmail" /> purbinepal11@gmail.com
           </p>
+          <p className="info-absolute"><IoIosInformationCircleOutline className="info-icon"/>
+ This website is currently under  production          </p>
         </div>
       </div>
       <nav
