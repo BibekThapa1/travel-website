@@ -7,7 +7,7 @@ const Footer = () => {
   const currentDate = new Date().getFullYear();
 
   return (
-    <div className="footer container-fluid">
+    <div id="footer" className="footer container-fluid">
       <div className="row">
         <div className="pt-4 col-12 col-sm-6">
           <h1 className="py-0 m-0">Contact Us</h1>

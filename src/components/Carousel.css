@@ -1,0 +1,99 @@
+.carousel {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:10px 0 20px 0;
+    width: 100%;
+    height: 300px;
+    max-height: 70vw;
+    max-width: 1200px;
+    transition: 0.4s all linear;
+  }
+  
+  .carousel img{
+    object-fit: cover;
+  }
+
+  .carousel .slide {
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 7px #666;
+    width: 100%;
+    height: 100%;
+    transition: 0.4s all linear;
+  }
+  
+  .carousel .slide-hidden {
+    display: none;
+  }
+  
+  .carousel .arrow {
+    position: absolute;
+    filter: drop-shadow(0px 0px 5px #555);
+    width: 2rem;
+    height: 2rem;
+    color: white;
+  }
+  
+  .carousel .arrow:hover {
+    cursor: pointer;
+  }
+  
+  .carousel .arrow-left {
+    left: 0.3rem;
+  }
+  
+  .carousel .arrow-right {
+    right: 0.3rem;
+  }
+  
+  .carousel .indicators {
+    display: flex;
+    position: absolute;
+    bottom: 1rem;
+  }
+  
+  .carousel .indicator {
+    background-color: white;
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 100%;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 5px #555;
+    margin: 0 0.2rem;
+    cursor: pointer;
+  }
+  
+  .carousel .indicator-inactive {
+    background-color: grey;
+  }
+
+  @media screen and (min-width:700px) {
+    
+    .carousel{
+        height: 400px;
+        margin:10px 0 20;
+    }
+    .carousel .arrow-left {
+        left: 1rem;
+      }
+      
+      .carousel  .arrow-right {
+        right: 1rem;
+      }
+     
+  }
+  @media screen and (min-width:1000px) {
+    .carousel{
+        height: 500px;
+    }
+    .carousel  .arrow-left {
+        left: 2rem;
+      }
+      
+      .carousel .arrow-right {
+        right: 2rem;
+      }
+     
+  }

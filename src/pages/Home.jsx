@@ -1,10 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Slider from "../components/Slider";
 import img1 from "../images/slider1.jpg";
 import img2 from "../images/slider2.jpg";
 import cardImg1 from "../images/iilam.jpeg";
 import cardImg2 from "../images/iilam2.jpeg";
 import Eletter from "../components/Eletter";
+import SearchResults from "../components/SearchResults";
 
 const Home = () => {
   const images = [img1, img2];
@@ -16,6 +18,7 @@ const Home = () => {
       name: "Iilam View",
       description:
         "This is Iilam. It is located in eastern hilly region of nepal. The nature here is very special and give a heartwarming vibe.",
+        slug:"/places/betana"
     },
     {
       img: cardImg2,
@@ -84,7 +87,7 @@ const Home = () => {
                   <h5 className="card-title mb-0 pb-1">{card.name}</h5>
                   <p className="card-text">{card.description}</p>
                 </div>
-                <button className="mb-2">Read More</button>
+                <button className="mb-2"><Link style={{textDecoration:"none",color:"inherit"}} to={card.slug}>Read More</Link></button>
               </div>
             ))}
           </div>
@@ -96,7 +99,6 @@ const Home = () => {
         </div>
       </div>
       <Eletter />
- 
     </>
   );
 };

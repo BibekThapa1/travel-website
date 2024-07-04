@@ -7,13 +7,7 @@
 
 /*  Navbar  */
 
-/* .navbar-section.fixed {
-    position: fixed;
-    top:0;
-    left: 0;
-    z-index:20;
-    background-color: white;
-} */
+
 nav.navbar.fixed{
     position: fixed;
     top:0;
@@ -141,6 +135,14 @@ transition: 0.4s all linear;
     letter-spacing: 1.2px;
     font-family: "Nunito Sans", sans-serif;
 }
+
+.navbar .nav-links-ul  .link-tag , .navbar .nav-links a{
+    display: block;
+    width: 90vw;
+    text-decoration: none;
+    color: inherit;
+}
+
 
 .navbar .nav-links-ul li:last-child {
     border-bottom: 1px solid black;
@@ -476,6 +478,7 @@ transition: 0.4s all linear;
 }
 
 @media screen and (min-width:1200px) {
+    
     .logo-section .logo {
         padding: 0 2rem !important;
     }
@@ -483,11 +486,9 @@ transition: 0.4s all linear;
     .logo-section .logo .nav-text {
         font-size: 1.3rem;
     }
-
-    .sliderStyles{
-        height: 80vmin;
-    }
-
+ .sliderStyles {
+    height: 70vmin;
+}
     .slider-container .slider-text{
         display:flex;
     }
