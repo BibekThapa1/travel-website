@@ -9,6 +9,7 @@ import PlacesPage from "./pages/PlacesPage";
 import About from "./components/About";
 import Loader from "./components/Loader";
 import SearchResultPage from "./pages/SearchResultPage";
+import PlaceInfo from "./components/PlaceInfo";
 
 function App() {
   return (

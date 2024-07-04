@@ -105,9 +105,9 @@ const Navbar = () => {
         >
           <ul className="nav-links-ul list-unstyled">
           
-            <li className="p-2 py-2   px-3">  <Link className="link-tag" to={"/"}>Home</Link></li>
-            <li className="p-2 py-2 px-3"><Link className="link-tag" to={"/places"}>Places</Link></li>
-            <li className="p-2 py-2 px-3"><Link className="link-tag" to={"/about"}>About</Link></li>
+          <Link className="link-tag" to={"/"}> <li className="p-2 py-2   px-3"> Home</li></Link>
+          <Link className="link-tag" to={"/places"}>     <li className="p-2 py-2 px-3">Places</li></Link>
+          <Link className="link-tag" to={"/about"}> <li className="p-2 py-2 px-3">About</li></Link>
             <li className="p-2 py-2 px-3"><a className="link-tag" href="#footer">Contact</a></li>
           </ul>
         </div>

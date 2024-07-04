@@ -136,7 +136,9 @@ transition: 0.4s all linear;
     font-family: "Nunito Sans", sans-serif;
 }
 
-.navbar .nav-links-ul li .link-tag{
+.navbar .nav-links-ul  .link-tag , .navbar .nav-links a{
+    display: block;
+    width: 90vw;
     text-decoration: none;
     color: inherit;
 }
