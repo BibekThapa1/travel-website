@@ -25,11 +25,11 @@ const Places = () => {
         ))}
       </div>
     </div>
-    <div className="buttons">
+    {/* <div className="buttons">
       <button className="">
         Explore More...
       </button>
-    </div>
+    </div> */}
   </div>
   </>
   )

@@ -10,42 +10,49 @@ const placesCardData = [
     name: "Itahari",
     description:
       "loremajskfdjkwsdajfk djsfoijeiajdfi fjdoisjf jdwsaf oisdfjoijd f",
+      link:"places/betana"
   },
   {
     img: image2,
     name: "Bagdoda",
     description:
       "loremajskfdjkwsdajfk djsfoijeiajdfi fjdoisjf jdwsaf oisdfjoijd f",
+       link:"places/betana"
   },
   {
     img: image3,
     name: "Biratchowk",
     description:
       "loremajskfdjkwsdajfk djsfoijeiajdfi fjdoisjf jdwsaf oisdfjoijd f",
+       link:"places/betana"
   },
   {
     img: image4,
     name: "Kanepokhari",
     description:
       "loremajskfdjkwsdajfk djsfoijeiajdfi fjdoisjf jdwsaf oisdfjoijd f",
+       link:"places/betana"
   },
   {
     img: image1,
     name: "Betana",
     description:
       "loremajskfdjkwsdajfk djsfoijeiajdfi fjdoisjf jdwsaf oisdfjoijd f",
+       link:"places/betana"
   },
   {
     img: image2,
     name: "Vinland",
     description:
       "loremajskfdjkwsdajfk djsfoijeiajdfi fjdoisjf jdwsaf oisdfjoijd f",
+       link:"places/betana"
   },
   {
     img: image3,
     name: "Jamun Khadi",
     description:
       "loremajskfdjkwsdajfk djsfoijeiajdfi fjdoisjf jdwsaf oisdfjoijd f",
+       link:"places/betana"
   },
 ];
 

@@ -1,0 +1,22 @@
+{
+  "name": "purbi-nepal",
+  "version": "1.0.0",
+  "description": "backend for purbi nepal",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon ./src/index.js"
+  },
+  "keywords": [
+    "run",
+    "dev"
+  ],
+  "author": "Bibek Thapa",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^8.4.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}

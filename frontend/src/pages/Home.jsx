@@ -41,14 +41,16 @@ const Home = () => {
                   <h5 className="card-title mb-0 pb-1">{card.name}</h5>
                   <p className="card-text">{card.description}</p>
                 </div>
-                <button className="mb-2"><Link style={{textDecoration:"none",color:"inherit"}} to={card.slug}>Read More</Link></button>
+                <button className="mb-2"><Link style={{textDecoration:"none",color:"inherit"}} to={card.link}>Read More</Link></button>
               </div>
             ))}
           </div>
         </div>
         <div className="buttons">
           <button className="">
+            <Link  style={{textDecoration:"none",color:"inherit"}}  to={"/places"}>
             Explore More...
+            </Link>
           </button>
         </div>
       </div>
