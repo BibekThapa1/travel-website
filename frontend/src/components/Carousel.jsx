@@ -25,9 +25,9 @@ const Carousel = ({data}) => {
       {data.map((item, idx) => {
         return (
           <img
-            src={item.img}
-            alt={item.name}
-            key={item.name}
+            src={item}
+            alt={item}
+            key={idx}
             className={slide === idx ? "slide" : "slide slide-hidden"}
           />
         );

@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.2.6",
+    "html-react-parser": "^5.1.10",
+    "multer": "^1.4.5-lts.1",
+    "react-redux": "^9.1.2"
+  }
+}

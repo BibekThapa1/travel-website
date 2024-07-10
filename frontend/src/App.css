@@ -263,6 +263,7 @@ transition: 0.4s all linear;
     font-weight: bold;
     font-family: monospace;
     letter-spacing: 0.3px;
+    text-transform: capitalize;
 }
 
 .info-section p {

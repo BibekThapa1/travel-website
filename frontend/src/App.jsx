@@ -9,7 +9,6 @@ import PlacesPage from "./pages/PlacesPage";
 import About from "./components/About";
 import Loader from "./components/Loader";
 import SearchResultPage from "./pages/SearchResultPage";
-import PlaceInfo from "./components/PlaceInfo";
 
 function App() {
   return (
@@ -19,8 +18,8 @@ function App() {
       <Route path="/" element={<Home/>} />
       <Route path="/about" element={<About/>} />
       <Route path="/places" element={<PlacesPage/>} />
-      <Route path="/places/betana" element={<PlaceDetail/>} />
-      <Route path="/search-results" element={<SearchResultPage/>} />
+      <Route path="/place/:slug" element={<PlaceDetail/>} />
+      <Route path="/search-results/:slug" element={<SearchResultPage/>} />
       </Routes>
       <Footer />
     </Router>

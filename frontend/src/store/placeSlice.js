@@ -1,10 +1,19 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { places } from "../data/data";
 
-const initialState = [...places];
+const initialState = {
+    searchData:[]
+};
 
 const placeSlice = createSlice({
-    name:places,
+    name:"place",
     initialState,
-    
+    reducers:{
+        addSearchList:(state,action)=>{
+            state.searchData = action.payload
+        }
+    }
 })
+
+export const {addSearchList} = placeSlice.actions;
+
+export default placeSlice.reducer
