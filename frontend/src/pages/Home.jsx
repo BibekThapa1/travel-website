@@ -1,10 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Slider from "../components/Slider";
-import img1 from "../images/slider1.jpg";
-import img2 from "../images/slider2.jpg";
-import cardImg1 from "../images/iilam.jpeg";
-import cardImg2 from "../images/iilam2.jpeg";
 import Eletter from "../components/Eletter";
 import apiCall from "../api";
 import Loader from "../components/Loader";
